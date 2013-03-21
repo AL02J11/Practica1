@@ -23,8 +23,8 @@ $(document).ready(function(e) {
 			break;
 		}
 		});
-		$('#derecha').swiperight(function(){
-			navigator.notification.alert("Deslizo a la derecha",function(){ },"Practica 1","Aceptar");
-		});
+		
 	},false);
-    });
+        	
+              
+              }
