@@ -1,7 +1,7 @@
 $(document).ready(function(e) {
 	//alert ("listo")
 	document.addEventListener("deviceready",function (){
-		$('.btn').click (function(){
+		$(".btn").tap (function(){
 		var boton=(($(this).attr('class')).split(' '))[1];
 		switch(boton)
 		{
@@ -22,6 +22,10 @@ $(document).ready(function(e) {
 			navigator.notification.vibrate(1000);
 			break;
 		}
+		$('derecha').swiperight(function(){
+			navigator.notification.alert("deslizo a la derecha",function(){},"Practica 1", "aceptar");
+			
+		});
 		});
 		
 	},false);
